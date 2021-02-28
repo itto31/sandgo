@@ -16,7 +16,7 @@ func GeneroJWT(t models.Usuario) (string, error) {
 		"apellidos":        t.Apellidos,
 		"fecha_nacimiento": t.FechaNacimiento,
 		"biografia":        t.Biografia,
-		"sitioWeb":         t.SitioWeb,
+		"sitioweb":         t.SitioWeb,
 		"_id":              t.ID.Hex(),
 		"exp":              time.Now().Add(time.Hour * 24).Unix(),
 	}
