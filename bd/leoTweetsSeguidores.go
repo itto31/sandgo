@@ -13,7 +13,7 @@ func LeoTweetsSeguidores(ID string, pagina int) ([]models.DevuelvoTweetsSeguidor
 	ctx, cancel := context.WithTimeout(context.Background(), 15*time.Second)
 	defer cancel()
 
-	db := MongoC.Database("twittor")
+	db := MongoC.Database("sandgo")
 	col := db.Collection("relacion")
 
 	skip := (pagina - 1) * 20
